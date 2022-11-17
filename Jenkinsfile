@@ -8,7 +8,8 @@ pipeline {
  stages {
  stage(‘Cloning Git’) {
  steps {
- git([url: ‘https://github.com/SheyNjila1/Jenkins-Pipeline-for-Docker.git', branch: ‘main’])
+ // git([url: ‘https://github.com/SheyNjila1/Jenkins-Pipeline-for-Docker.git', branch: ‘main’])
+ git branch: 'main', url: 'https://github.com/SheyNjila1/Jenkins-Pipeline-for-Docker.git'
  }
  }
  stage(‘Building image’) {
