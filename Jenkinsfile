@@ -5,8 +5,8 @@ pipeline {
  dockerImage = ‘’
  }
  agent any
- stages {
- stage(‘Cloning Git’) {
+ stages { 
+ stage(‘Git checkout’) {
  steps {
  // git([url: ‘https://github.com/SheyNjila1/Jenkins-Pipeline-for-Docker.git', branch: ‘main’])
  git branch: 'main', url: 'https://github.com/SheyNjila1/Jenkins-Pipeline-for-Docker.git'
